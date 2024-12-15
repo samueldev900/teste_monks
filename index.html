@@ -4,17 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fotn Awesome icons -->
-    <script src="https://kit.fontawesome.com/15bc59f810.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/15bc59f810.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Mobile first css -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/mobile.css" media="screen" />
+    <link rel="stylesheet" href="styles/tablets.css" media="screen" />
+    <link rel="stylesheet" href="styles/desktop.css" media="screen" />
     <title>Document</title>
   </head>
 
   <body>
     <!-- header -->
     <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <span>.monks</span>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">Categoria 1</li>
+            <li class="nav-item">Categoria 2</li>
+            <li class="nav-item">Categoria 3</li>
+            <li class="nav-item">Categoria 4</li>
+          </ul>
+        </div>
+      </nav>
+
       <div id="header">
-        <div id="logo">
+        <div class="logo">
           <span>.monks</span>
         </div>
         <!-- Menu mobile -->
@@ -31,7 +51,12 @@
           <li>Categoria 4</li>
         </ul>
         <div id="button-back" onclick="close_menu()">
-          <img id="image-back" style="width: 58.6px; height: 83.71px;" src="assets/images/back.svg" alt="">
+          <img
+            id="image-back"
+            style="width: 58.6px; height: 83.71px"
+            src="assets/images/back.svg"
+            alt=""
+          />
           <div id="back">back</div>
         </div>
       </nav>
@@ -49,60 +74,76 @@
         </div>
         <!-- Scroll Icon -->
         <div class="center text-section">
-          <img style="width: 38px; height: 51.43px;" src="assets/images/scroll.svg" alt="">
+          <img class="scroll" src="assets/images/scroll.svg" alt="" />
         </div>
       </section>
 
-      <section id="section-2">
-        <h1>Lorem ipsum dolor sit amet consectetur</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
-          faucibus sit scelerisque quis commodo
-        </p>
+      <section id="section-2" class="grid-container">
+        <div class="grid-item">
+          <h1>Lorem ipsum dolor sit amet consectetur</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
+            faucibus sit scelerisque quis commodo
+          </p>
+        </div>
 
-        <div class="card">
+        <div class="card grid-item1">
           <img src="assets/images/section-2/pexels-punttim-67517.jpg" alt="" />
-          <h1>Lorem ipsum dolor</h1>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div>
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="card grid-item2">
           <img src="assets/images/section-2/pexels-caio-45917.jpg" alt="" />
-          <h1>Lorem ipsum dolor</h1>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div>
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="card grid-item3">
           <img src="assets/images/section-2/pexels-hikaique-97906.jpg" alt="" />
-          <h1>Lorem ipsum dolor</h1>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div>
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="card grid-item4">
           <img
             src="assets/images/section-2/pexels-cax0000-2065850.jpg"
             alt=""
           />
-          <h1>Lorem ipsum dolor</h1>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div>
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
         </div>
       </section>
 
       <section id="section-3">
-        <h1>Lorem ipsum dolor sit amet consectetur</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
-          faucibus sit scelerisque quis commodo
-        </p>
-        <div id="section_image_1"></div>
-        <div id="section_image_2"></div>
-        <div id="section_image_3"></div>
+        <div id="section3-div">
+          <div class="sec3-item">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
+              faucibus sit scelerisque quis commodo
+            </p>
+          </div>
+          <div id="section_image_1"></div>
+          <div id="section_image_2"></div>
+          <div id="section_image_3"></div>
+        </div>
       </section>
 
-      <section>
+      <section id="section-4">
         <div id="div-purple">
-          <h2>Lorem ipsum dolor sit amet consectetur</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
-            faucibus sit scelerisque quis commodo aenean viverra
-          </p>
+          <div class="width-customize">
+            <h2>Lorem ipsum dolor sit amet consectetur</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
+              faucibus sit scelerisque quis commodo aenean viverra
+            </p>
+          </div>
           <div id="apple-google">
             <img
               class="img-logo"
@@ -117,9 +158,9 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="section-6">
         <h2>
-          Lorem ipsum dolor sit <br />
+          Lorem ipsum dolor sit
           amet consectetur
         </h2>
         <div class="container">
@@ -148,14 +189,14 @@
             <div class="button-icon">Body splash</div>
             <div class="button-icon">Óleo corporal</div>
           </div>
-          <div class="row">
+          <div class="row container-item">
             <div class="button-icon">Corretivo</div>
             <div class="button-icon">Proteção solar</div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="card type-2">
+      <section id="section-5">
+        <div class="type-2">
           <div>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>
@@ -166,7 +207,7 @@
 
           <button>Lorem ipsum</button>
         </div>
-        <div class="card type-2">
+        <div class="type-2">
           <div>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>
@@ -177,7 +218,7 @@
 
           <button>Lorem ipsum</button>
         </div>
-        <div class="card type-2">
+        <div class="type-2" id="last-card">
           <div>
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>
@@ -191,35 +232,54 @@
       </section>
 
       <section id="final-section">
-      <img id="men" src="assets/images/men.svg" alt="">      
+        <img id="men" src="assets/images/men.svg" alt="" />
 
         <div id="form">
-          <h2>Lorem ipsum dolor sit amet consectetur</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
-            faucibus sit scelerisque
-          </p>
-          <p style="margin-top: 16px">
-            *Lorem ipsum dolor sit amet consectetur
-          </p>
-          <input type="text" placeholder="Categoria*" />
-          <input type="text" placeholder="Categoria*" />
-          <input type="text" placeholder="Categoria*" />
-          <input type="text" placeholder="Categoria*" />
-          <div id="verify">
-            <h3>Verificação de segurança</h3>
-            <div id="calculate">
-              <div id="sum">
-                <div>
-                  <span class="number">427</span>
-                  <!-- Plus Icon -->
-                  <i class="fa-solid fa-plus" style="color: #1e3050;"></i>
-                  <span class="number">628</span>
-                </div>
-              </div>
-              <i class="fa-regular fa-equals fa-lg" style="color:#1e3050;"></i>
-              <input type="number" id="result" placeholder="Resultado*" />
+          <div class="center">
+            <div class="form-text">
+              <h2>Lorem ipsum dolor sit amet consectetur</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
+                faucibus sit scelerisque
+              </p>
+              <p style="margin-top: 16px">
+                *Lorem ipsum dolor sit amet consectetur
+              </p>
             </div>
+            <div id="inputs">
+              <input type="text" placeholder="Categoria*" />
+              <input type="text" placeholder="Categoria*" />
+              <input type="text" placeholder="Categoria*" />
+              <input type="text" placeholder="Categoria*" />
+            </div>
+          </div>
+
+          <div id="verify" class="center">
+
+
+            
+            
+            <div id="flex-div">
+              <h3>Verificação de segurança</h3>
+              <div id="calculate">
+                <div id="sum">
+                  <div>
+                    <span class="number" id="number1">427</span>
+                    <!-- Plus Icon -->
+                    <i class="fa-solid fa-plus" style="color: #1e3050"></i>
+                    <span class="number" id="number2">628</span>
+                  </div>
+                </div>
+                <!-- Equal Icon -->
+                <i
+                  class="fa-regular fa-equals fa-lg"
+                  style="color: #1e3050; margin: 0 5px"
+                ></i>
+                <input type="number" id="result" placeholder="Resultado*" />
+              </div>
+            </div>
+
+
             <div class="center">
               <button>Lorem ipsum</button>
             </div>
@@ -227,22 +287,24 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div id="socials">
-        <i class="fa-brands fa-instagram fa-2xl"></i>
-        <i class="fa-brands fa-whatsapp fa-2xl"></i>
-        <i class="fa-brands fa-twitter fa-2xl"></i>
-        <i class="fa-brands fa-facebook-f fa-2xl"></i>
-      </div>
-      <div class="center" id="about">
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <div id="text-footer">
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum</p>
+    <footer class="center">
+      <div>
+        <div id="socials">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+          <i class="fa-brands fa-whatsapp fa-2xl"></i>
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+          <i class="fa-brands fa-facebook-f fa-2xl"></i>
         </div>
-        <div class="center">
-          <p>Lorem ipsum</p>
+        <div class="center" id="about">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <div id="text-footer">
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+          <div class="center">
+            <p>Lorem ipsum</p>
+          </div>
         </div>
       </div>
     </footer>
