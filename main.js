@@ -1,3 +1,5 @@
+/* Menu Mobile */
+
 function open_menu() {
   let verify = false;
   let press = document.getElementById("nav");
@@ -21,3 +23,32 @@ function close_menu() {
   press.style.display = "none";
   header.style.borderRadius = "0";
 }
+
+
+/* Auth */
+
+let random = Math.floor(Math.random() * 100) + 1;
+let random1 = Math.floor(Math.random() * 100) + 1;
+
+let number1 = document.getElementById('number1');
+let number2 = document.getElementById('number2');
+input_result = document.getElementById('result');
+result = random + random1;
+
+number1.innerHTML = random
+number2.innerHTML = random1
+/* 
+  Fica com borda vermelha enquanto a responsta estiver incorreta 
+  E Verde quando correta
+ */
+input_result.addEventListener("input", function (e) {
+  if(this.value != result){
+    this.style.border = '2px solid red'
+  }
+  else{
+    this.style.border = '2px solid green'
+  }
+});
+
+
+
