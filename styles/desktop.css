@@ -269,3 +269,53 @@ Desktop Grande
   }
   
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1366px)  {
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 223px;
+    height: 314px;
+  }
+  .card img {
+    width: 225px;
+    max-height: 180px;
+  }
+
+  #section_image_2 {
+    width: 391px;
+
+  }
+  #section_image_3 {
+    width: 391px;
+
+  }
+  #div-purple {
+    width: 1006px;
+
+  }
+  .container{
+    width: 1106px;
+  }
+  .type-2 {
+    margin: 0 5px;
+  }
+  #form {
+    width: 708px;
+   height: 456px;
+ }
+ #form h2 {
+  font-size: 35px;
+}
+#form p {
+  width: 600px;
+}
+
+input {
+  width: 302px;
+}
+#flex-div{
+  width: 708px;
+}
+}

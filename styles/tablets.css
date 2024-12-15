@@ -38,4 +38,16 @@
   #last-card{
     grid-column: 1/3;
   }
+  #inputs{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  input{
+
+    margin:5px;
+  }
+  #section3-div{
+    display: grid;
+    place-items: center;
+  }
 }
