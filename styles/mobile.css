@@ -1,0 +1,17 @@
+/* 
+Mobile Médio
+576px a 768px 
+*/
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    section{
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        width: 600px;
+        margin-top: 24px;
+    }
+}
+  
